@@ -157,7 +157,10 @@ class MemeEditorViewController: UIViewController, UIImagePickerControllerDelegat
     
     func saveMeme(memedImage: UIImage) {
         
-        _ = Meme(topText: topText.text!, bottomText: bottomText.text!, image: imagePickerView.image!, memedImage: memedImage)
+        let meme = Meme(topText: topText.text!, bottomText: bottomText.text!, image: imagePickerView.image!, memedImage: memedImage)
+        let appDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
+        appDelegate.memes.append(meme)
+        
     }
     
     //Combine image and text using an image context to render the view hierarchy as a UIImage
