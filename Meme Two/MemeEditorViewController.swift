@@ -152,6 +152,7 @@ class MemeEditorViewController: UIViewController, UIImagePickerControllerDelegat
     @IBAction func cancelAction(sender: UIBarButtonItem) {
         
         setupInitialView()
+        dismissViewControllerAnimated(true, completion: nil)
     }
     
     func saveMeme(memedImage: UIImage) {
