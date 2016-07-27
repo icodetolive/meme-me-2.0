@@ -14,16 +14,16 @@ class MemeTableViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.tableView.dataSource = self
-        self.tableView.delegate = self
+        tableView.dataSource = self
+        tableView.delegate = self
         
-        self.navigationItem.leftBarButtonItem = self.editButtonItem()
+        navigationItem.leftBarButtonItem = editButtonItem()
         title = "Sent Memes"
     }
     
     override func viewWillAppear(animated: Bool) {
         super.viewWillAppear(animated)
-        self.tableView.reloadData()
+        tableView.reloadData()
         for tabBarItem in tabBarController!.tabBar.items! {
             tabBarItem.title = ""
             tabBarItem.imageInsets = UIEdgeInsetsMake(6, 0, -6, 0)

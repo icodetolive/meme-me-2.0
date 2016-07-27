@@ -13,7 +13,7 @@ class MemeCollectionViewController: UICollectionViewController {
     
     override func viewWillAppear(animated: Bool) {
         super.viewWillAppear(animated)
-        self.collectionView!.reloadData()
+        collectionView!.reloadData()
         for tabBarItem in tabBarController!.tabBar.items! {
             tabBarItem.title = ""
             tabBarItem.imageInsets = UIEdgeInsetsMake(6, 0, -6, 0)
