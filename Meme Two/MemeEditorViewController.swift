@@ -118,15 +118,15 @@ class MemeEditorViewController: UIViewController, UIImagePickerControllerDelegat
     
     @IBAction func pickAnImageFromAlbums(sender: UIBarButtonItem) {
         
-        saveImage(UIImagePickerControllerSourceType.PhotoLibrary)
+        saveImageFromSource(UIImagePickerControllerSourceType.PhotoLibrary)
     }
     
     @IBAction func pickAnImageFromCamera(sender: UIBarButtonItem) {
         
-        saveImage(UIImagePickerControllerSourceType.Camera)
+        saveImageFromSource(UIImagePickerControllerSourceType.Camera)
     }
     
-    func saveImage(source: UIImagePickerControllerSourceType) {
+    func saveImageFromSource(source: UIImagePickerControllerSourceType) {
         
         let imagePickerController = UIImagePickerController()
         imagePickerController.delegate = self
