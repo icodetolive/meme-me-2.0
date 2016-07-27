@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  Meme.swift
 //  Meme Two
 //
 //  Created by Sugandha Naolekar on 7/25/16.
